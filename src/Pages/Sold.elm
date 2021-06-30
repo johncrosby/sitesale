@@ -1,6 +1,7 @@
 module Pages.Sold exposing (page)
 
 import Gen.Params.Sold exposing (Params)
+import Gen.Route as Route exposing (Route)
 import Html
 import Page exposing (Page)
 import Request
@@ -10,14 +11,17 @@ import View exposing (View)
 
 
 page : Shared.Model -> Request.With Params -> Page
-page shared req =
+page shared _ =
     Page.static
-        { view = view
+        { view = view shared
         }
 
 
-view : View msg
-view =
-    { title = "Sold"
-    , body = UI.layout [ Html.h1 [] [ Html.text "Sold" ] ]
+view shared =
+    { title = "For Sale"
+    , body =
+        UI.layout
+            [ Html.h1 [] [ Html.text "For Sale" ]
+            , Html.div [] [ Shared.sold shared ]
+            ]
     }

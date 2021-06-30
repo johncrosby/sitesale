@@ -2,10 +2,12 @@ module Shared exposing
     ( Flags
     , Model
     , Msg
+    , Status
+    , forSale
     , init
+    , sold
     , subscriptions
     , update
-    , view
     , viewFeed
     )
 
@@ -84,30 +86,39 @@ init _ _ =
     )
 
 
-
--- viewStatusList
-
-
 viewDetailedProperty : Property -> Html msg
 viewDetailedProperty property =
     li [] [ text (property.name ++ " " ++ String.fromInt property.price ++ " " ++ statusToString property.status) ]
 
 
-viewFeed : Maybe Feed -> Html msg
-viewFeed maybeFeed =
+viewFeed : Maybe Feed -> Status -> Html msg
+viewFeed maybeFeed status =
     case maybeFeed of
         Just feed ->
-            div [] (List.map viewDetailedProperty feed)
+            let
+                myList =
+                    List.filter (\record -> record.status == status) feed
+            in
+            div [] (List.map viewDetailedProperty myList)
 
         Nothing ->
             div [] [ text "Loading Feed..." ]
 
 
-view : Model -> Html msg
-view model =
+forSale : Model -> Html msg
+forSale model =
     div []
         [ ul []
-            [ viewFeed model.feed
+            [ viewFeed model.feed ForSale
+            ]
+        ]
+
+
+sold : Model -> Html msg
+sold model =
+    div []
+        [ ul []
+            [ viewFeed model.feed Sold
             ]
         ]
 

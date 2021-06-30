@@ -23,6 +23,6 @@ view shared params =
         UI.layout
             [ Html.h1 [] [ Html.text "Dynamic Page" ]
             , Html.h2 [] [ Html.text params.name ]
-            , Html.div [] [ Shared.view shared ]
+            , Html.div [] [ Shared.sold shared ]
             ]
     }
