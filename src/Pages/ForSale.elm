@@ -1,8 +1,5 @@
 module Pages.ForSale exposing (page)
 
--- import Gen.Model exposing (Model(..))
--- import Gen.Model exposing (Model(..))
-
 import Gen.Params.Static exposing (Params)
 import Gen.Route
 import Html

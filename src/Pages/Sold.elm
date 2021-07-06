@@ -3,6 +3,7 @@ module Pages.Sold exposing (page)
 import Gen.Params.Sold exposing (Params)
 import Gen.Route as Route exposing (Route)
 import Html
+import Html.Attributes as Attr
 import Page exposing (Page)
 import Request
 import Shared
@@ -18,10 +19,10 @@ page shared _ =
 
 
 view shared =
-    { title = "For Sale"
+    { title = "Sold"
     , body =
         UI.layout
-            [ Html.h1 [] [ Html.text "For Sale" ]
+            [ Html.h1 [] [ Html.text "Sold" ]
             , Html.div [] [ Shared.sold shared ]
             ]
     }
