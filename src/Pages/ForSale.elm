@@ -1,7 +1,9 @@
 module Pages.ForSale exposing (page)
 
+-- import Gen.Route
+-- import Gen.Params.Static exposing (Params)
+
 import Gen.Params.Static exposing (Params)
-import Gen.Route
 import Html
 import Page exposing (Page)
 import Request
