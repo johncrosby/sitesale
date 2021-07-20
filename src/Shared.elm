@@ -105,11 +105,18 @@ init _ _ =
                   , status = ForSale
                   }
                 , { id = 5
-                  , link = "79-evershot-road-sslington-london-n4-3df"
+                  , link = "79-evershot-road-islington-london-n4-3df"
                   , name = "79 Evershot Road, Islington, London N4 3DF"
                   , price = 1000000
                   , description = "Existing office and yard with residential development potential"
                   , status = ForSale
+                  }
+                , { id = 6
+                  , link = "9-11-elm-road-collier-row-romford-rm7-8hh"
+                  , name = "9-11 Elm road, Collier Row, RM7 8HH"
+                  , price = 350000
+                  , description = "Backlands consisting of 25 garages with residential development potential"
+                  , status = Sold
                   }
                 ]
       }
