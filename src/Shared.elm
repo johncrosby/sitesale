@@ -118,6 +118,13 @@ init _ _ =
                   , description = "Backlands consisting of 25 garages with residential development potential"
                   , status = Sold
                   }
+                , { id = 6
+                  , link = "rear-of-83-christchurch-road-london-sw2-3dh"
+                  , name = "Rear of 83 Christchurch Road, London, SW2 3DH"
+                  , price = 600000
+                  , description = "Rear garden facing road side with failed planning application for 7 flats."
+                  , status = Sold
+                  }
                 ]
       }
     , Cmd.none
