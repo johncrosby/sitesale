@@ -9,19 +9,29 @@ body {
 
 .navbar {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
-.navbar .brand {
+/* .navbar .brand {
   font-size: 1.5rem;
-}
+} */
 
-.navbar .splitter { flex: 1 1 auto; }
+/* .navbar .splitter { flex: 1 1 auto; } */
 
 .navbar a {
   margin-right: 16px;
 }
 
-h1, h2 { 
+/* h1, h2 { 
   margin-top: 3rem;
-}
+} */
+
+/* li { 
+  list-style-type: none;
+  position: relative;
+  font-size: 1.5rem;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #0e0fee;
+  color: #fff;
+} */

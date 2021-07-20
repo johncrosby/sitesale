@@ -21,8 +21,8 @@ module Shared exposing
 import FormatNumber exposing (format)
 import FormatNumber.Locales exposing (Decimals(..), Locale, usLocale)
 import Gen.Params.Properties.Name_ exposing (Params)
-import Html exposing (Html, div, li, text, ul)
-import Html.Attributes as Attr exposing (property)
+import Html exposing (Html, a, div, h5, li, p, text, ul)
+import Html.Attributes as Attr exposing (class, property)
 import Json.Decode as Json
 import Request exposing (Request)
 
@@ -80,7 +80,7 @@ init _ _ =
                   , link = "59-61-palermo-road-kensal-green-london-nw10-5ys"
                   , name = "59-61 Palermo Road, Kensal Green, London, NW10 5YS"
                   , price = 1750000
-                  , description = "Palermo Road is great!"
+                  , description = "Currently an MOT and car repair garage. The site is suitable for redevelopment and has been sold to Fruition Properties"
                   , status = Sold
                   }
                 , { id = 2
@@ -100,8 +100,8 @@ init _ _ =
                 , { id = 4
                   , link = "13-15-tollington-way-islington-london-n7-6rg"
                   , name = "13-15 Tollington Way, Islington, London N7 6RG"
-                  , price = 750000
-                  , description = "Shes a nightmare!"
+                  , price = 3000000
+                  , description = "Notes"
                   , status = ForSale
                   }
                 , { id = 5
@@ -117,20 +117,25 @@ init _ _ =
     )
 
 
-
-{--
-format : Locale -> Float -> String
-format { decimals = Exact 2, thousandSeparator = ".", decimalSeparator = ",", negativePrefix = "−", negativeSuffix = "", positivePrefix = "", positiveSuffix = "", zeroPrefix = "", zeroSuffix = "" } 123456.789
---}
-
-
+{--}
 viewPropertyList : Property -> Html msg
 viewPropertyList property =
     li [] [ Html.a [ Attr.href ("/properties/" ++ property.link) ] [ text (property.name ++ " £" ++ format { usLocale | decimals = Exact 0 } (toFloat property.price)) ] ]
+--}
 
 
 
--- format (Locale (Exact 0) "," "." "−" "" "" "" "" "") 1e9
+{--
+viewPropertyList : Property -> Html msg
+viewPropertyList property =
+    div [ class "card" ]
+        [ div [ class "card-body" ]
+            [ h5 [ class "card-title" ] [ text property.name ]
+            , p [ class "card-text" ] [ text "sdklhjf " ]
+            , a [ Attr.href ("/properties/" ++ property.link) ] [ text property.name ]
+            ]
+        ]
+--}
 
 
 viewPropertyListFeed : Maybe Feed -> Status -> Html msg
