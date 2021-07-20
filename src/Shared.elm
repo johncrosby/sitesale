@@ -79,21 +79,21 @@ init _ _ =
                 [ { id = 1
                   , link = "59-61-palermo-road-kensal-green-london-nw10-5ys"
                   , name = "59-61 Palermo Road, Kensal Green, London, NW10 5YS"
-                  , price = 1750000
+                  , price = 1450000
                   , description = "Currently an MOT and car repair garage. The site is suitable for redevelopment and has been sold to Fruition Properties"
                   , status = Sold
                   }
                 , { id = 2
                   , link = "270-282-hornsey-road-islington-london-n7-7qz"
                   , name = "270-282 Hornsey Road, Islington, London, N7 7QZ"
-                  , price = 2500000
+                  , price = 1750000
                   , description = "Hornsey Road development site"
                   , status = Sold
                   }
                 , { id = 3
                   , link = "1a-highgate-road-kentish-town-london-nw5-1jy"
                   , name = "1A Highgate Road, Kentish Town, London NW5 1JY"
-                  , price = 800000
+                  , price = 2000000
                   , description = "An old piano warehouse"
                   , status = Sold
                   }
@@ -101,14 +101,14 @@ init _ _ =
                   , link = "13-15-tollington-way-islington-london-n7-6rg"
                   , name = "13-15 Tollington Way, Islington, London N7 6RG"
                   , price = 3000000
-                  , description = "Notes"
+                  , description = "Existing investment of 5 flats, workshop and shop uniit. With refurb / development and change of use potential."
                   , status = ForSale
                   }
                 , { id = 5
                   , link = "79-evershot-road-sslington-london-n4-3df"
                   , name = "79 Evershot Road, Islington, London N4 3DF"
-                  , price = 1350000
-                  , description = "Currently has cars parked"
+                  , price = 1000000
+                  , description = "Existing office and yard with residential development potential"
                   , status = ForSale
                   }
                 ]
