@@ -20,7 +20,7 @@ page shared _ =
 
 
 view shared =
-    { title = "For Sale"
+    { title = "SiteSale | For Sale"
     , body =
         UI.layout
             [ Html.h1 [] [ Html.text "For Sale" ]

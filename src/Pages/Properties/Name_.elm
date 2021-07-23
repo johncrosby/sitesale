@@ -30,7 +30,7 @@ page shared req =
 
 view : Shared.Model -> Request.With Params -> View msg
 view shared req =
-    { title = req.params.name
+    { title = "SiteSale | " ++ req.params.name
     , body =
         UI.layout
             -- [ Html.h1 [] [ Html.text "Property Details:" ]

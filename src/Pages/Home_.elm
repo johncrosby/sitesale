@@ -8,7 +8,7 @@ import View exposing (View)
 
 view : View msg
 view =
-    { title = "Homepage"
+    { title = "SiteSale"
     , body =
         UI.layout
             [ Html.h1 [] [ Html.text "Home" ]
