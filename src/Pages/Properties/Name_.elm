@@ -19,21 +19,14 @@ page shared req =
         }
 
 
-
--- boolToString : Bool -> String
--- boolToString bool =
---     if bool == True then
---         "True"
---     else
---         "False"
-
-
 view : Shared.Model -> Request.With Params -> View msg
 view shared req =
     { title = "SiteSale | " ++ req.params.name
     , body =
         UI.layout
-            -- [ Html.h1 [] [ Html.text "Property Details:" ]
             [ Html.div [] [ fetchData req.params.name shared ]
+            , Html.hr [] []
+            , Html.p [] [ Html.text "More sites for sale:" ]
+            , Html.div [] [ Shared.forSale shared ]
             ]
     }

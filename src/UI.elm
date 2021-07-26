@@ -20,5 +20,6 @@ layout children =
             , Html.div [ Attr.class "splitter" ] []
             ]
         , Html.main_ [] children
+        , Html.footer [ Attr.class "footer" ] [ Html.text "Crosby Estates, 2a Fairbridge Road, London, N19 3HZ" ]
         ]
     ]
