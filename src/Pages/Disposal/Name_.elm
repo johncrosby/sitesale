@@ -24,7 +24,7 @@ view shared req =
         UI.layout
             [ Html.h1 [] [ Html.text ("Selling land in " ++ convertCase " " True True req.params.name ++ " " ++ "?") ]
             , Html.h3 [] [ Html.text "We can help you with the following options:" ]
-            , Html.ol []
+            , Html.ul []
                 [ Html.li [] [ Html.text "Sell unconditionally (without planning permission)." ]
                 , Html.li [] [ Html.text "Sell with planning (where planning consent has already been obtained)." ]
                 , Html.li [] [ Html.text "Sell subject to planning (Normally the buyer will obtain and pay for the planning application at their risk)." ]

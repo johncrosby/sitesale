@@ -19,10 +19,9 @@ page shared _ =
 
 
 view shared =
-    { title = "SiteSale | Sold"
+    { title = "Crosby Estates | Sold"
     , body =
         UI.layout
-            [ Html.h1 [] [ Html.text "Sold" ]
-            , Html.div [] [ Shared.sold shared ]
+            [ Shared.sold shared
             ]
     }

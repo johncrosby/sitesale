@@ -4,3 +4,5 @@ elm-stuff
 node_modules
 dist
 git.txt
+sass
+style.css.map

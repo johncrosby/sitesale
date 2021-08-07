@@ -8,12 +8,11 @@ import View exposing (View)
 
 view : View msg
 view =
-    { title = "SiteSale"
+    { title = "Crosby Estates"
     , body =
         UI.layout
-            [ Html.h1 [] [ Html.text "Home" ]
+            [ Html.h1 [] [ Html.text "Crosby Estates" ]
             , Html.p [] [ Html.text "Investment & development agents based in north London. Serving clients throughout London and UK" ]
-            , Html.p [] []
             ]
     }
 
