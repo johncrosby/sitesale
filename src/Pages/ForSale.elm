@@ -5,6 +5,7 @@ module Pages.ForSale exposing (page)
 
 import Gen.Params.ForSale exposing (Params)
 import Html
+import Html.Attributes exposing (href, style)
 import Page exposing (Page)
 import Request
 import Shared
@@ -23,6 +24,7 @@ view shared =
     { title = "Crosby Estates | For Sale"
     , body =
         UI.layout
-            [ Shared.forSale shared
+            [ Html.h1 [ style "padding" "0.5em 1em 0em 0.5em" ] [ Html.text "Crosby Estates" ]
+            , Shared.forSale shared
             ]
     }

@@ -4,7 +4,7 @@ module Pages.Properties.Name_ exposing (page)
 
 import Gen.Params.Properties.Name_ exposing (Params)
 import Html exposing (Html, div, param, text)
-import Html.Attributes exposing (property)
+import Html.Attributes as Attr exposing (property)
 import Page exposing (Page)
 import Request exposing (Request)
 import Shared exposing (Msg, Property, fetchData)
@@ -25,8 +25,5 @@ view shared req =
     , body =
         UI.layout
             [ Html.div [] [ fetchData req.params.name shared ]
-            , Html.hr [] []
-            , Html.p [] [ Html.text "More sites for sale:" ]
-            , Html.div [] [ Shared.forSale shared ]
             ]
     }

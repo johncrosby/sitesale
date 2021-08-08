@@ -74,70 +74,87 @@ type Msg
     = NoOp
 
 
-baseUrl : String
-baseUrl =
-    "https://res.cloudinary.com/yonks/image/upload/"
+
+-- baseUrl : String
+-- baseUrl =
+--     "https://res.cloudinary.com/yonks/image/upload/"
 
 
 init : Request -> Flags -> ( Model, Cmd Msg )
 init _ _ =
     ( { feed =
             Just
-                [ { id = 1
-                  , link = "59-61-palermo-road-kensal-green-london-nw10-5ys"
-                  , name = "59-61 Palermo Road, Kensal Green, London, NW10 5YS"
+                [ { id = 9
+                  , link = "17-19-beethoven-street-north-kensington-london-w10-4lg"
+                  , name = "Beethoven Street, London, W10."
                   , price = 1450000
-                  , description = "Currently an MOT and car repair garage. The site is suitable for redevelopment and has been sold to Fruition Properties"
+                  , description = "A pair of freehold buildings to convert and extend with new-build development potential at the rear. Sold to Safeland Plc unconditionally."
                   , status = Sold
-                  , image = baseUrl ++ "c_scale,w_650/v1627642642/b_akc6fk.jpg"
+                  , image = "https://res.cloudinary.com/yonks/image/upload/c_scale,w_650/v1628429332/beethoven_street_wiwhrm.jpg"
                   }
-                , { id = 2
+                , { id = 8
+                  , link = "28-elsdale-street-hackney-london-e9-6qy"
+                  , name = "Elsdale Street, Hackney, London, E9."
+                  , price = 1450000
+                  , description = "Airspace development subject to planning permission fo 7 flats. Sold To RGK Properties."
+                  , status = Sold
+                  , image = "https://res.cloudinary.com/yonks/image/upload/c_scale,w_650/v1628427184/elsdale_street_dsbtd7.jpg"
+                  }
+                , { id = 7
+                  , link = "59-61-palermo-road-kensal-green-london-nw10-5ys"
+                  , name = "Palermo Road, Kensal Green, London, NW10."
+                  , price = 1450000
+                  , description = "Currently an MOT and car repair garage. The site is suitable for redevelopment and has been sold subject to planning consent to Fruition Properties"
+                  , status = Sold
+                  , image = "https://res.cloudinary.com/yonks/image/upload/c_scale,w_650/v1628417841/palermo_road_ofl7oq.jpg"
+                  }
+                , { id = 6
                   , link = "270-282-hornsey-road-islington-london-n7-7qz"
-                  , name = "270-282 Hornsey Road, Islington, London, N7 7QZ"
+                  , name = "Hornsey Road, Islington, London, N7."
                   , price = 1750000
-                  , description = "Hornsey Road development site"
+                  , description = "Hornsey Road development site. Income producing investment let to NHS with future development potential while retaining doctors surgery. Sold unconditionally to Woolboro Homes."
                   , status = Sold
-                  , image = baseUrl ++ "c_scale,w_650/v1627642644/f_vojd4w.jpg"
+                  , image = "https://res.cloudinary.com/yonks/image/upload/c_scale,w_650/v1628420935/hornsey_road_endil8.jpg"
                   }
-                , { id = 3
+                , { id = 5
                   , link = "1a-highgate-road-kentish-town-london-nw5-1jy"
-                  , name = "1A Highgate Road, Kentish Town, London NW5 1JY"
+                  , name = "Highgate Road, Kentish Town, London, NW5."
                   , price = 2000000
-                  , description = "An old piano warehouse"
-                  , status = ForSale
-                  , image = baseUrl ++ "c_scale,w_650/v1627642643/c_wfvuyx.jpg"
+                  , description = "An old piano warehouse with failed planning application for five houses. Sold unconditionally to IDM Properties."
+                  , status = Sold
+                  , image = "https://res.cloudinary.com/yonks/image/upload/c_scale,w_650/v1628422851/highgate_road_i29prt.jpg"
                   }
                 , { id = 4
                   , link = "13-15-tollington-way-islington-london-n7-6rg"
-                  , name = "13-15 Tollington Way, Islington, London N7 6RG"
+                  , name = "Tollington Way, Islington, London N7."
                   , price = 3000000
                   , description = "Existing investment of 5 flats, workshop and shop uniit. With refurb / development and change of use potential."
                   , status = ForSale
-                  , image = baseUrl ++ "c_scale,h_488,w_650/v1627642637/ab_sjwott.jpg"
+                  , image = "https://res.cloudinary.com/yonks/image/upload/c_scale,h_488,w_650/v1627642637/ab_sjwott.jpg"
                   }
-                , { id = 5
+                , { id = 3
                   , link = "79-evershot-road-islington-london-n4-3df"
-                  , name = "79 Evershot Road, Islington, London N4 3DF"
+                  , name = "Evershot Road, Islington, London N4."
                   , price = 1000000
                   , description = "Existing office and yard with residential development potential"
                   , status = ForSale
-                  , image = baseUrl ++ "c_scale,w_650/v1627642642/b_akc6fk.jpg"
+                  , image = "https://res.cloudinary.com/yonks/image/upload/c_scale,w_650/v1628425410/evershot_road.jpg_ruobuo.jpg"
                   }
-                , { id = 6
+                , { id = 2
                   , link = "9-11-elm-road-collier-row-romford-rm7-8hh"
-                  , name = "9-11 Elm road, Collier Row, RM7 8HH"
+                  , name = "Elm road, Collier Row, Romford, RM7."
                   , price = 350000
-                  , description = "Backlands consisting of 25 garages with residential development potential"
+                  , description = "Backlands consisting of 25 garages with residential development potential. Sold to Adam Goldsmith. Planning consent was subsequently approved on appeal for seven houses."
                   , status = Sold
-                  , image = baseUrl ++ "c_scale,w_650/v1627642642/b_akc6fk.jpg"
+                  , image = "https://res.cloudinary.com/yonks/image/upload/c_scale,w_650/v1628423751/elm_road_w5ec0r.jpg"
                   }
-                , { id = 6
+                , { id = 1
                   , link = "rear-of-83-christchurch-road-london-sw2-3dh"
-                  , name = "Rear of 83 Christchurch Road, London, SW2 3DH"
+                  , name = "Christchurch Road, Streatham, London, SW2."
                   , price = 600000
-                  , description = "Rear garden facing road side with failed planning application for 7 flats."
+                  , description = "Rear garden facing road side with failed planning application for 7 flats. Sold unconditionally to Red Khamlichi and subsequently obtained planning permission for five houses."
                   , status = Sold
-                  , image = baseUrl ++ "c_scale,w_650/v1627642642/b_akc6fk.jpg"
+                  , image = "https://res.cloudinary.com/yonks/image/upload/c_scale,w_650/v1628424456/christchurch_road_owrbn2.jpg"
                   }
                 ]
       }
@@ -174,10 +191,10 @@ viewPropertyListFeed maybeFeed status =
 {--}
 viewDetailedItem : Property -> Html msg
 viewDetailedItem property =
-    div [ Attr.class "details" ]
+    div [ Attr.class "this" ]
         [ Html.h1 [] [ text property.name ]
         , Html.h2 [] [ text ("Status: " ++ statusToString property.status) ]
-        , Html.p [] [ text property.description ]
+        , Html.p [ Attr.class "description" ] [ text property.description ]
         ]
 --}
 
@@ -191,7 +208,7 @@ viewItem maybeFeed link =
                 myList =
                     List.filter (\record -> record.link == link) feed
             in
-            div [] (List.map viewDetailedItem myList)
+            div [ Attr.class "details" ] (List.map viewDetailedItem myList)
 
         Nothing ->
             div [] [ text "Loading item..." ]
@@ -224,7 +241,7 @@ pathList maybeFeed =
 fetchData : String -> Model -> Html msg
 fetchData path model =
     if List.member path (pathList model.feed) then
-        Html.div [] [ viewItem model.feed path ]
+        viewItem model.feed path
 
     else
         Html.text "Invalid page"
