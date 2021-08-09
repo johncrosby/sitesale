@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
 * {
   box-sizing: border-box;
+  border: 1px solid red;
   margin: 0;
   padding: 0;
 }
@@ -12,6 +12,7 @@ body {
 
 .wrapper {
   display: grid;
+  min-height: 100%;
   max-width: 800px;
   padding: 0px;
   font: 500 100%/1.5 system-ui;
@@ -26,7 +27,6 @@ body {
 
 .container {
   grid-area: main;
-  background-color: #d0d0d0;
 }
 
 .container div {
@@ -48,19 +48,8 @@ body {
   padding: 0.7em;
 }
 
-.box1 li p {
-  color: white;
-}
-
 .box1 li {
-  color: red;
   padding: 1em;
-  background-color: #706adc;
-  margin: 0em 0em 0em 0em;
-}
-
-.box1 > a {
-  text-decoration: none;
 }
 
 .box1 li:hover {
@@ -85,6 +74,10 @@ body {
   padding: 0em 0em 0em 0em;
   border: 0;
   background-color: white;
+}
+h1,
+h2 {
+  font-size: 1.3em;
 }
 
 .items {

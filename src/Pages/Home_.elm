@@ -11,9 +11,25 @@ view =
     { title = "Crosby Estates"
     , body =
         UI.layout
-            [ Html.h1 [ style "padding" "0.5em 1em 0em 0.5em" ] [ Html.text "Crosby Estates" ]
-            , Html.h3 [ style "padding" "1em" ] [ Html.text "Investment & development agents based in north London. Serving clients throughout London and UK" ]
+            [ Html.div [ style "padding" "0em 1em 0em 1em" ]
+                [ Html.h1
+                    [ style "padding" "0.5em 0em 0.5em 1em"
+                    , style "background-color" "white"
+                    ]
+                    [ Html.text "Crosby Estates" ]
+                , Html.h2
+                    [ style "padding" "0.5em 0em 0.5em 1em"
+                    , style "background-color" "white"
+                    ]
+                    [ Html.text "Investment & development agents based in north London. Serving clients throughout London and UK" ]
+                ]
             ]
+
+    -- [ Html.div []
+    --     [ Html.h1 [ style "padding" "0.5em 1em 0em 0.5em", style "background-color" "white" ] [ Html.text "Crosby Estates" ]
+    --     , Html.h2 [ style "padding" "1em", style "background-color" "white" ] [ Html.text "Investment & development agents based in north London. Serving clients throughout London and UK" ]
+    --     ]
+    -- ]
     }
 
 

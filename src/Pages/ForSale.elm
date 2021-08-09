@@ -24,7 +24,13 @@ view shared =
     { title = "Crosby Estates | For Sale"
     , body =
         UI.layout
-            [ Html.h1 [ style "padding" "0.5em 1em 0em 0.5em" ] [ Html.text "Crosby Estates" ]
+            [ Html.div [ style "padding" "0em 1em 0em 1em" ]
+                [ Html.h1
+                    [ style "padding" "0.5em 0em 0.5em 1em"
+                    , style "background-color" "white"
+                    ]
+                    [ Html.text "Crosby Estates - For Sale" ]
+                ]
             , Shared.forSale shared
             ]
     }
