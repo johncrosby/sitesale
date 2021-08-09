@@ -88,7 +88,7 @@ init _ _ =
                   , link = "17-19-beethoven-street-north-kensington-london-w10-4lg"
                   , name = "Beethoven Street, London, W10."
                   , price = 1450000
-                  , description = "A pair of freehold buildings to convert and extend with new-build development potential at the rear. Sold to Safeland Plc unconditionally."
+                  , description = "A pair of freehold buildings to convert and extend with new-build development potential at the rear. Sold to Public Limited Company unconditionally."
                   , status = Sold
                   , image = "https://res.cloudinary.com/yonks/image/upload/c_scale,w_650/v1628429332/beethoven_street_wiwhrm.jpg"
                   }
@@ -104,7 +104,7 @@ init _ _ =
                   , link = "59-61-palermo-road-kensal-green-london-nw10-5ys"
                   , name = "Palermo Road, Kensal Green, London, NW10."
                   , price = 1450000
-                  , description = "Currently an MOT and car repair garage. The site is suitable for redevelopment and has been sold subject to planning consent to Fruition Properties"
+                  , description = "Currently an MOT and car repair garage. The site is suitable for redevelopment and has been sold subject to planning consent to central London development company"
                   , status = Sold
                   , image = "https://res.cloudinary.com/yonks/image/upload/c_scale,w_650/v1628417841/palermo_road_ofl7oq.jpg"
                   }
@@ -112,7 +112,7 @@ init _ _ =
                   , link = "270-282-hornsey-road-islington-london-n7-7qz"
                   , name = "Hornsey Road, Islington, London, N7."
                   , price = 1750000
-                  , description = "Hornsey Road development site. Income producing investment let to NHS with future development potential while retaining doctors surgery. Sold unconditionally to Woolboro Homes."
+                  , description = "Hornsey Road development site. Income producing investment let to NHS with future development potential while retaining doctors surgery. Sold unconditionally to north London developers."
                   , status = Sold
                   , image = "https://res.cloudinary.com/yonks/image/upload/c_scale,w_650/v1628420935/hornsey_road_endil8.jpg"
                   }
@@ -120,7 +120,7 @@ init _ _ =
                   , link = "1a-highgate-road-kentish-town-london-nw5-1jy"
                   , name = "Highgate Road, Kentish Town, London, NW5."
                   , price = 2000000
-                  , description = "An old piano warehouse with failed planning application for five houses. Sold unconditionally to IDM Properties."
+                  , description = "An old piano warehouse with failed planning application for five houses. Sold unconditionally to north London developers."
                   , status = Sold
                   , image = "https://res.cloudinary.com/yonks/image/upload/c_scale,w_650/v1628422851/highgate_road_i29prt.jpg"
                   }
@@ -144,7 +144,7 @@ init _ _ =
                   , link = "9-11-elm-road-collier-row-romford-rm7-8hh"
                   , name = "Elm road, Collier Row, Romford, RM7."
                   , price = 350000
-                  , description = "Backlands consisting of 25 garages with residential development potential. Sold to Adam Goldsmith. Planning consent was subsequently approved on appeal for seven houses."
+                  , description = "Backlands consisting of 25 garages with residential development potential. Sold to private developer. Planning consent was subsequently approved on appeal for seven houses."
                   , status = Sold
                   , image = "https://res.cloudinary.com/yonks/image/upload/c_scale,w_650/v1628423751/elm_road_w5ec0r.jpg"
                   }
@@ -152,7 +152,7 @@ init _ _ =
                   , link = "rear-of-83-christchurch-road-london-sw2-3dh"
                   , name = "Christchurch Road, Streatham, London, SW2."
                   , price = 600000
-                  , description = "Rear garden facing road side with failed planning application for 7 flats. Sold unconditionally to Red Khamlichi and subsequently obtained planning permission for five houses."
+                  , description = "Rear garden facing road side with failed planning application for 7 flats. Sold unconditionally to private developer and subsequently obtained planning permission for five houses."
                   , status = Sold
                   , image = "https://res.cloudinary.com/yonks/image/upload/c_scale,w_650/v1628424456/christchurch_road_owrbn2.jpg"
                   }
