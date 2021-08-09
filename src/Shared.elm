@@ -18,6 +18,7 @@ module Shared exposing
 
 -- import Html.Attributes exposing (property)
 -- import Gen.Route.Properties.Name_ as Route
+-- import List exposing (drop)
 
 import FormatNumber exposing (format)
 import FormatNumber.Locales exposing (Decimals(..), Locale, base, usLocale)
@@ -47,6 +48,16 @@ statusToString status =
             "Sold"
 
 
+
+-- dropToString : Maybe String -> String
+-- dropToString property =
+--     case property.drop of
+--         Nothing ->
+--             "False"
+--         _ ->
+--             "True"
+
+
 type alias Id =
     Int
 
@@ -72,12 +83,6 @@ type alias Property =
 
 type Msg
     = NoOp
-
-
-
--- baseUrl : String
--- baseUrl =
---     "https://res.cloudinary.com/yonks/image/upload/"
 
 
 init : Request -> Flags -> ( Model, Cmd Msg )
@@ -194,6 +199,7 @@ viewDetailedItem property =
     div [ Attr.class "this" ]
         [ Html.h1 [] [ text property.name ]
         , Html.h2 [] [ text ("Status: " ++ statusToString property.status) ]
+        , Html.img [ src property.image ] []
         , Html.p [ Attr.class "description" ] [ text property.description ]
         ]
 --}
